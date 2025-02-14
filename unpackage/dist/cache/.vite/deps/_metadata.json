@@ -1,0 +1,15 @@
+{
+  "hash": "ec927181",
+  "configHash": "57881cd0",
+  "lockfileHash": "3baf3909",
+  "browserHash": "8aca3fbd",
+  "optimized": {
+    "mqtt/dist/mqtt.js": {
+      "src": "../../../../../node_modules/mqtt/dist/mqtt.js",
+      "file": "mqtt_dist_mqtt__js.js",
+      "fileHash": "1a2a78a9",
+      "needsInterop": true
+    }
+  },
+  "chunks": {}
+}

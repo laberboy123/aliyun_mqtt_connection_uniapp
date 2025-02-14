@@ -1,0 +1,192 @@
+/* 全局样式 */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f9;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+	flex-direction: column;
+	align-items: center;
+	display: flex;
+	overflow-y: auto;
+}
+.app-container {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	width: 25rem;
+	/* 限制最大宽度 */
+	width: 95%;
+	/* 自适应屏幕宽度 */
+	/* box-sizing: border-box; */
+	/* overflow-y: auto; */
+}
+
+/* 响应式布局 */
+@media (max-width: 400px) {
+.app-container {
+		padding: 5px;
+}
+.device-data-container,
+	.history-data-container {
+		font-size: 14px;
+}
+}
+h1 {
+	color: #4a90e2;
+	margin: 0 3.125rem;
+	font-size: 1.2rem;
+	/* 使用相对单位 */
+	text-align: center;
+	white-space: nowrap;
+}
+.container {
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 5%;
+	/* 使用百分比内边距 */
+	width: 90%;
+	/* 相对宽度 */
+	max-width: 25rem;
+	/* 限制最大宽度 */
+	margin: 20px auto;
+}
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.form-group uni-label {
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 1rem;
+}
+.form-group uni-input {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+	height: 20px;
+	width: 100%;
+	/* box-sizing: border-box; */
+}
+.form-group uni-input:focus {
+	outline: none;
+	border-color: #4a90e2;
+	box-shadow: 0 0 4px #4a90e2;
+}
+uni-button {
+	background-color: #4a90e2;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 10px;
+	font-size: 1rem;
+	cursor: pointer;
+	margin: 10px 5px 0 0;
+	width: 100%;
+	/* 占满父容器 */
+}
+uni-button:hover {
+	background-color: #357ab8;
+}
+.messages {
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 10px;
+	margin-top: 20px;
+	-webkit-user-select: text;
+	        user-select: text;
+	font-size: 0.9rem;
+}
+.messages h2 {
+	margin: 0 0 10px;
+	font-size: 1.2rem;
+}
+.message {
+	font-size: 0.9rem;
+	margin: 5px 0;
+	padding: 5px;
+	background: #eef6fd;
+	border-left: 4px solid #4a90e2;
+}
+.messages-container {
+	max-height: 300px;
+	width: 100%;
+	overflow-y: auto;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+}
+.device-data-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: flex-start;
+}
+.device-data-item {
+	border: 1px solid #ccc;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: left;
+	min-width: 100px;
+	background: #ffffff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.data-name {
+	font-weight: bold;
+	color: #42c7ff;
+	margin-bottom: 5px;
+	font-size: 1rem;
+}
+.data-value {
+	color: #333;
+	font-size: 0.9rem;
+}
+.history-data-container {
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.history-data-header {
+	display: flex;
+	background-color: #f4f4f4;
+	font-weight: bold;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+.history-data-row {
+	display: flex;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: #ffffff;
+}
+.history-data-item {
+	flex: 1;
+	text-align: left;
+	font-size: 0.9rem;
+	overflow-wrap: break-word;
+	/* 防止内容溢出 */
+}
+.history-data-header .history-data-item {
+	color: #333;
+}
+.history-data-row .history-data-item {
+	color: #555;
+}
+
+/* 响应式布局 */
+@media (max-width: 400px) {
+.history-data-item {
+		font-size: 0.8rem;
+}
+}
